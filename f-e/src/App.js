@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header';
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </a>
         <Header/>
       </header>
+      <h1>Hello everyone!</h1>
     </div>
   );
 }

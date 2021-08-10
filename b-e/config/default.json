@@ -1,5 +1,5 @@
 {
-    "dbURI": "YOUR DB URI",
+    "dbURI": "mongodb//:localhost:27017",
     "jwtsecret": "your jwt secret",
-    "StripeAPIKey": "YOUR STRIPE SECRET API KEY"
+    "StripeAPIKey": "sk_test_51JLJx6SEKNsJaQ7ZAsr1AaxLeyNFB9lzzI0Qr58oIuWXfZHnWJvwBYYGCObhSbCpx34pt0kgJASBF4ZVXW08K86F00nqIb4G8y"
 }
