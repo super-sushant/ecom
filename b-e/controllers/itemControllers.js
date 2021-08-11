@@ -1,4 +1,4 @@
-const Item =require('../models/Items');
+const Item =require('../models/Item');
 
 module.exports.get_items = (req,res) =>{
     Item.find().sort({date:-1})

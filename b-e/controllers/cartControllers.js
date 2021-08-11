@@ -47,7 +47,7 @@ module.exports.add_cart_item = async(req,res) =>{
                     quantity,
                     price
                 }],
-                bill=quantity*price
+                bill:quantity*price
             })
             return res.status(201).send(newCart)
         }

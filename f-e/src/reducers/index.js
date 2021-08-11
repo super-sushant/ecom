@@ -5,11 +5,10 @@ import authReducer from './authReducer';
 import cartReducer from './cartReducer';
 import orderReducer from './orderReducer';
 
-const rootReducer = combineReducers({
+export default combineReducers({
     item: itemReducer,
     error: errorReducer,
     auth: authReducer,
     cart: cartReducer,
     order: orderReducer
 })
-export default rootReducer

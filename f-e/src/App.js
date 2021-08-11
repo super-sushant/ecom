@@ -1,28 +1,27 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
+import {Provider} from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './components/header';
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Header/>
-      </header>
-      <h1>Hello everyone!</h1>
-    </div>
-  );
+// import Header from './components/header';
+import Main from './components/Main';
+import store from './store'
+import {loadUser} from './actions/authActions';
+import { BrowserRouter as Router } from 'react-router-dom'
+class App extends Component {
+  componentDidMount(){
+    store.dispatch(loadUser())
+  }
+  render() {
+    return (
+      <Provider store={store} >
+        <Router>
+          <Main/>
+        </Router>
+      </Provider>
+      
+    );
+  }
 }
 
 export default App;

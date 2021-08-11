@@ -44,6 +44,7 @@ module.exports.signup =(req,res)=>{
 
 module.exports.login = async(req,res) =>{
     const{email,password}=req.body
+    console.log(password)
     if(!email || !password){
         res.status(400).json({
             msg:'you forgot to enter the fields dumbass'
