@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 
 module.exports.signup =(req,res)=>{
     const {name,email,password} = req.body;
+    console.log(req.body)
     if(!name || !email || !password){
         res.status(400).json({msg:'Please enter the fields b!tch!1'})
     }

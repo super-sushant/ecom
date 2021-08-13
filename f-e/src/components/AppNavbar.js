@@ -1,5 +1,5 @@
 import React from 'react'
-import { Collapse, Navbar, NavbarToggler,Nav,NavItem,Container, NavLink} from 'reactstrap'
+import { Collapse, Navbar, NavbarToggler,NavbarBrand,Nav,NavItem,Container, NavLink} from 'reactstrap'
 import RegisterModel from './auth/registerModal'
 import LoginModel from './auth/loginModal'
 import Logout from './auth/Logout'
@@ -53,6 +53,7 @@ class AppNavbar extends React.Component{
             <div>
                 <Navbar color='dark' dark expand ='sm' className='mb-5'>
                     <Container>
+                        <NavbarBrand href="/">E Commerce Store</NavbarBrand>
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className ="ml-auto" navbar>
